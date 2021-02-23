@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>sample</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Online Compiler</h1>
+        <select id="language">
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="python3">Python3</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <br/>
+        ソースコード: <br/>
+        <div id="source_code" style="width: 100%; height: 200px; border: 1px solid;"></div>
+        標準入力:<br/>
+        <textarea id="input" style="width: 100%; height: 50px; resize: vertical;"></textarea>
+        <br/>
+
+        <button id="run_button" class="btn btn-primary">実行(Ctrl-Enter)</button>
+        <br/>
+        <hr/>
+
+        標準出力:
+        <pre><div id="stdout" style="background: lightgray;"></div></pre>
+
+        標準エラー出力:
+        <pre><div id="stderr" style="background: lightgray;"></div></pre>
+
+        実行時間:
+        <div id="time" style="background: lightgray;"></div>
+
+        終了コード:
+        <div id="exit_code" style="background: lightgray;"></div>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+        <!-- <script src="https://pagecdn.io/lib/ace/1.4.12/ace.min.js" crossorigin="anonymous" integrity="sha256-T5QdmsCQO5z8tBAXMrCZ4f3RX8wVdiA0Fu17FGnU1vU=" ></script> -->
+        <script src="https://pagecdn.io/lib/ace/1.4.12/ext-language_tools.min.js" crossorigin="anonymous"  ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="run.js"></script>
+        <script src="ui.js"></script>
+    </body>
+</html>
